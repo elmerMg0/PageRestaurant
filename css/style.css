@@ -1,0 +1,121 @@
+:root{
+    --fuenteHeading: 'PT sans',sans-serif;
+    --fuenteParrafos: 'Open sans', sans-serif;
+}
+/* GLOBALES */
+html{
+    box-sizing: border-box;
+    font-size: 65.5%;
+    
+}
+*,*:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: var(--fuenteParrafos);
+    font-size: 1.6rem;
+   /*  line-height: 2cm; */
+    margin: 0;
+    padding: 0;
+}
+
+/* globales */
+.container{
+    max-width: 120rem;
+    /* width: 90%; */
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+
+.h1,h2,h3,h4{
+    font-family: var(--fuenteHeading);
+}
+img{
+    max-width: 100%;
+}
+.no-margin{
+    margin: 0;
+}
+.no-padding{
+    padding: 0;
+}
+
+.nav-social a{
+    cursor:pointer;
+    color: orange;
+    /* padding: 5px 10px; */
+    /* z-index: 2; */
+    border-right: 1px solid orange;
+}
+.facebook{
+    padding: 5px 11px;
+    border-left: 1px solid orange;
+}
+.youtube{
+    padding: 5px 8px;
+}
+.instagram{
+    padding: 5px 10px;
+}
+
+/*Header Secundario*/
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 31px;
+    font-size: 1.5rem;
+}
+.nav-contacto{
+    display: flex;
+    
+}
+.nav-top{
+    display: flex;
+    align-items: center;
+    /* gap: 10px; */
+    padding: 5px 20px;
+    border-right: 1px solid orange;
+}
+.nav-contact-phone{
+    border-left:1px solid orange;
+}
+
+.nav-top a{
+    color: orange;
+}
+.nav-social{
+    display: flex;
+    /* gap: 15px; */
+   
+    
+}
+.nav-social a:hover,
+.nav-top:hover{
+    opacity: .7;
+}
+
+@media (max-width: 950px) {
+    .nav-contacto a span{
+        display: none ;
+    }
+
+}
+
+/* navegacion */
+/* .navegation-main{
+    background-color: orange;
+}
+.navegation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.navegation-logo{
+    display: flex;
+} */
