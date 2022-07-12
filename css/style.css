@@ -1,6 +1,7 @@
 :root{
     --fuenteHeading: 'PT sans',sans-serif;
     --fuenteParrafos: 'Open sans', sans-serif;
+    --colorMain: #ff9000;
 }
 /* GLOBALES */
 html{
@@ -21,9 +22,10 @@ body{
 }
 
 /* globales */
-.container{
+
+.container-gb{
     max-width: 120rem;
-    /* width: 90%; */
+    
     margin: 0 auto;
 }
 .container-elements{
@@ -77,13 +79,21 @@ img{
 
 /*Header Secundario*/
 
+.positionFixed{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+.header-bg{
+    background-color: white;
+}
 .header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 35px;
     font-size: 1.5rem;
-    font-family: Merriweather Sans
+    font-family: Merriweather Sans;
 }
 .nav-contacto{
     display: flex;
@@ -138,8 +148,9 @@ img{
 
 /* navegacion */
 .navegation-main{
-    background-color: orange;
+    background-color: var(--colorMain);
     font-family: Merriweather;
+   
 }
 
 .navegation{
@@ -184,6 +195,9 @@ img{
         height: 55px;
     }
 
+    .navegation h2{
+        font-size: 28px;
+    }
     .navegation-logo img{
         margin-left: 15px;
         height: 40px;
@@ -194,13 +208,14 @@ img{
     }
     ul.navegation-elements {
         display: block;
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         background: white;
         height: 100%;
         padding: 30px;
         opacity: .9;
+       /*  z-index: 1; */
         transform: translateX(-400px);
         /* transform: translateY(50px);  */
         transition: transform .5s ease-in-out;
@@ -208,20 +223,21 @@ img{
 
     ul.navegation-elements.show{
         transform: translateX(-20px);
+
     }
 
     .navegation-elements li{
         padding: 30px;
     }
     .navegation-elements li a:hover{
-        border-bottom: 1px solid orange;
+        border-bottom: 1px solid  var(--colorMain);
     }
 
     .navegation-elements li a{
-        color: orange;
+        color: var(--colorMain);
     }
     .navegation-elements li a.nav-contact{
-        background-color: orange;
+        background-color: var(--colorMain);
         color: white;
     }
     .navegation-elements li a.nav-contact:hover{
@@ -232,14 +248,113 @@ img{
 /* landingPage */
 .container-landing{
     width: 100%;
+    margin-bottom: 110px;
 }
 
 .container-landing img{
     max-width: 100%;
+    margin-top: 110px;
+}
+
+/* presentacion */
+.presentation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Merriweather Sans;
+    text-align: center;
+    margin-bottom:50px;
+}
+
+.presentation img{
+    height: 200px;
+    margin-bottom: 110px;
+}
+.presentation h2,p{
+    text-transform: uppercase;
+    padding: 10px 10px;
+}
+
+@media (max-width: 950px) {
+    .container-landing img{
+       
+        margin-top: 90px;
+    }
+    .container-landing{
+        margin-bottom: 50px;
+    }
+    .presentation img{
+        height: 150px;
+        margin-bottom: 50px;
+    }
+    .presentation h2{
+        font-size: 25px;
+    }
 }
 
 /* menu */
-/* .menu{
- display: grid;
- grid-template-columns: repeat(2, 1fr);
+
+.menu{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 35px;
+    
+}
+
+.container-elements h1{
+    margin: 20px 0 60px 0;
+}
+
+
+/* Carusel */
+.carousel{
+    min-height: 500px;
+    
+}
+.carousel .carousel-item{
+    width: 700px;
+    height: 400px;
+    user-select: none;
+}
+
+.carousel .carousel-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top:0;
+    left:0;
+    /* z-index: -1; */
+    border-radius: 14px;
+}
+.carousel .indicators .indicator-item{
+    background-color: black;
+    color: red;
+}
+
+@media (max-width: 950px) {
+    .carousel{
+        min-height: 200px;   
+    }
+    .carousel .carousel-item{
+        width: 500px;
+        height: 300px;
+        user-select: none;
+    }
+    .col h1{
+        font-size: 28px;
+    }
+}
+/* @media (max-width: 700px) {
+    .carousel{
+        height: 250px;
+        width: 400px;  
+        
+    }
+    .carousel .carousel-item{
+        width: 400px;
+        height: 200px;
+        user-select: none;
+    }
+   
 } */
