@@ -418,3 +418,334 @@ img{
 -moz-box-shadow: -2px 0px 25px 0px rgba(0,0,0,0.75);   
     }
 }
+
+/* botone del menu */
+.menu-txt{
+    font-family: var(--fuenteMain);
+}
+.menu-btns{
+    display: flex;
+    justify-content: center;
+    gap: 58px;
+    border-bottom: 1px solid #999;
+    border-top: 1px solid #999;
+    padding: 17px 0;
+    margin-bottom: 30px;
+}
+
+.menu-btns  li{
+    color: var(--colorMain);
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.bg-whole-plate{
+/*     border-bottom: 2px solid orange;*/
+    color: brown;
+}
+.bg-middle-plate{
+    color: brown;
+   /*  border-bottom: 2px solid orange; */
+}
+/* texto de los pltos */
+
+.whole-middle{
+    display: flex;
+    justify-content: right;
+    gap: 15px;
+}
+.whole-middle h3{
+    font-size: 20px;
+    font-family: var(--fuenteMain);
+}
+.container-elements-dish{
+    max-width: 70rem;
+    margin: 0 auto;
+    width: 90%;
+    visibility: visible;
+}
+
+.menu-dish-oneline{
+    display: flex;
+    font-family: var(--fuenteMain);
+    /* justify-content: center; */
+}
+
+.menu-dish-oneline h5{
+    font-size: 25px;
+}
+.menu-linePun{
+    position: relative;
+    display: table-cell;
+    border-bottom: 1px dashed #999;
+    width: 67%;
+    height: 30px;
+}
+.show-menu{
+    visibility: hidden;
+}
+/* .menu-dish-text{
+    position: relative;
+    top: -1400px;
+    left: 0;
+    margin-bottom: 500px;
+} */
+.menu-dish-txt{
+    margin-bottom: -290px;
+}
+
+.menu-dish-txt-middle{
+    display: block;
+    position: relative;
+    top: -700px;
+    left: 0;
+    margin-bottom: -660px;
+}
+.tamanio{
+    margin-bottom: -360px;
+}
+
+/* Colocando espacios a los Platos de los precios*/
+.linePun-dish-pique{
+    width: 70%;
+    height: 3px;
+    border-bottom: 1px dashed #999;
+}
+.dish-pique{
+    width: 67.5%;
+}
+.dish-piqueE{
+    width: 55.6%;
+}
+.dish-charque{
+    width: 75%;
+}
+.dish-planchita{
+    width: 75.5%;
+}
+.dish-picanteL{
+    width: 62.5%;
+}
+.dish-picanteP{
+    width: 65.5%;
+}
+.dish-picanteM{
+    width: 68.5%;
+}
+.dish-lambreado{
+    width: 62%;
+}
+.dish-picanteC{
+    width: 63.5%;
+}
+.dish-chankaC{
+    width: 62.7%;
+}
+.dish-pato{
+    width: 71.8%;
+}
+.dish-patoD{
+    width: 59.7%;
+}
+/*Tmanos para FONDOS*/
+
+.dish-lapping{
+    width: 75%;
+}
+.dish-lomoP{
+    width: 65%;
+}
+.dish-lomoM{
+    width: 65.7%;
+}
+.dish-lomoC{
+    width: 56.5%;
+}
+.dish-costillar{
+    width: 64%;
+}
+.dish-brazuelo{
+    width: 64%;
+}
+.dish-milanosaL{
+    width: 63%;
+}
+.dish-milanesaP{
+    width: 64.5%;
+}
+.dish-chankaP{
+    width: 66.5%;
+}
+
+.menu-dish-oneline h5{
+    color: brown;
+}
+.dish-description{
+    font-family: var(--fuenteMain);
+    font-size: 20px;
+}
+
+.menu-dish-price{
+    display: flex;
+    align-items: center ;
+    gap: 35px;
+}
+.menu-dish-price h3{
+    color: var(--colorMain);
+    font-size: 22px;
+}
+@media (max-width:800px) {
+    .menu-dish-txt{
+        margin-bottom: -280px;
+     }
+ 
+     .menu-dish-txt-middle{
+         display: block;
+         position: relative;
+         top: -672px;
+         left: 0;
+         margin-bottom: -650px;
+     }
+ 
+     .tamanio{
+         margin-bottom: -350px;
+     }
+
+
+    .menu-dish-oneline h5{
+        font-size: 22px;
+    }
+    .menu-dish-price h3{
+        color: var(--colorMain);
+        font-size: 22px;
+    }
+    .dish-pique{
+        width: 68%;
+    }
+    .dish-piqueE{
+        width: 56.5%;
+    }
+    .dish-charque{
+        width: 74%;
+    }
+    .dish-planchita{
+        width: 74%;
+    }
+    .dish-picanteL{
+        width: 63%;
+    }
+    .dish-picanteP{
+        width: 66%;
+    }
+    .dish-picanteM{
+        width: 68.7%;
+    }
+    .dish-lambreado{
+        width: 62.5%;
+    }
+    .dish-picanteC{
+        width: 64%;
+    }
+    .dish-chankaC{
+        width: 63%;
+    }
+    .dish-pato{
+        width: 71.5%;
+    }
+    .dish-patoD{
+        width: 59.8%;
+    }
+}
+
+@media (max-width:600px) {
+    .menu-dish-txt{
+        margin-bottom: -400px;
+     }
+ 
+     .menu-dish-txt-middle{
+         display: block;
+         position: relative;
+         top: -884px;
+         left: 0;
+         margin-bottom: -700px;
+     }
+ 
+     .tamanio{
+         margin-bottom: -350px;
+     }
+}
+
+@media (max-width: 410px) {
+    .menu-dish-txt{
+       margin-bottom: -450px;
+    }
+
+    .menu-dish-txt-middle{
+        display: block;
+        position: relative;
+        top: -720px;
+        left: 0;
+        margin-bottom: -700px;
+    }
+
+    .tamanio{
+        margin-bottom: -350px;
+    }
+
+    .dish-description{
+        font-family: var(--fuenteMain);
+        font-size: 17px;
+    }
+    
+
+    .menu-dish-price h3{
+        color: var(--colorMain);
+        font-size: 20px;
+    }
+    .dish-pique{
+        width: 38%;
+    }
+    .dish-piqueE{
+        width: 18%;
+    }
+    .dish-charque{
+        width: 50%;
+    }
+    .dish-planchita{
+        width: 50%;
+    }
+    .dish-picanteL{
+        width: 29%;
+    }
+    .dish-picanteP{
+        width: 34%;
+    }
+    .dish-picanteM{
+        width: 39%;
+    }
+    .dish-lambreado{
+        width: 28%;
+    }
+    .dish-picanteC{
+        width: 30%;
+    }
+    .dish-chankaC{
+        width: 29%;
+    }
+   
+    .dish-pato{
+        width: 44.5%;
+    }
+    .dish-patoD{
+        width: 23%;
+    }
+}
+
+.contenedor-dish{
+    display: flex;
+    justify-content: space-between;
+}
+.linea{
+    border-bottom: 1px solid #999;
+    width: 100%;
+}

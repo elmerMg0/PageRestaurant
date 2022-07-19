@@ -14,4 +14,25 @@ document.addEventListener("DOMContentLoaded",()=>{
 document.querySelector(".menu-btn").addEventListener("click" ,()=>{
     document.querySelector(".navegation-elements").classList.toggle("show");
 });
+var entero = true;
+document.querySelector(".whole-plate").addEventListener("click",()=>{
+    if(!entero){
+        entero = true;
+        document.querySelector(".whole-plate").classList.toggle("bg-whole-plate")
+        document.querySelector(".middle-plate").classList.toggle("bg-middle-plate")
+        document.querySelector(".menu-dish-txt").classList.toggle("show-menu");
+        document.querySelector(".menu-dish-txt-middle").classList.toggle("show-menu");
+        document.querySelector(".menu-dish-txt-middle").classList.toggle("tamanio");
+    }
+});
+document.querySelector(".middle-plate").addEventListener("click",()=>{
+    if(entero){
+        entero = false;
+        document.querySelector(".whole-plate").classList.toggle("bg-whole-plate")
+        document.querySelector(".middle-plate").classList.toggle("bg-middle-plate")
+        document.querySelector(".menu-dish-txt-middle").classList.toggle("show-menu");
+        document.querySelector(".menu-dish-txt").classList.toggle("show-menu");
+        document.querySelector(".menu-dish-txt-middle").classList.toggle("tamanio");
 
+    }
+});
